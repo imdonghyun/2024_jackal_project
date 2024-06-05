@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Run pointcloud_to_laser node -->
+  <node pkg="my_pkg" type="test_go_to_marker.py" name="marker_follower"/>
+  <node pkg="my_pkg" type="robotarm.py" name="robotarm_server"/>
+  <node pkg="my_pkg" type="movebase_client_py.py" name="movebase_client_py"/>
+  <node pkg="my_pkg" type="stop_navigation.py" name="stop_goal_py"/>
+  <node pkg="my_pkg" type="finder.py" name="finder"/>
+  
+</launch>
